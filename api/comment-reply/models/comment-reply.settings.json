@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "comment_replies",
+  "info": {
+    "name": "CommentReply"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "text": {
+      "type": "richtext",
+      "maxLength": 144,
+      "minLength": 1
+    },
+    "comment": {
+      "model": "comment",
+      "via": "comment_replies"
+    },
+    "user": {
+      "via": "comment_reply",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

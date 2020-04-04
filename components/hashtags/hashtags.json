@@ -1,0 +1,16 @@
+{
+  "connection": "default",
+  "collectionName": "components_hashtags_hashtags",
+  "info": {
+    "name": "Hashtags",
+    "icon": "th-large"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 20
+    }
+  }
+}

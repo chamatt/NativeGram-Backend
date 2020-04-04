@@ -1,0 +1,15 @@
+{
+  "connection": "default",
+  "collectionName": "components_followers_followers",
+  "info": {
+    "name": "Followers",
+    "icon": "users"
+  },
+  "options": {},
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
