@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "likes",
+  "info": {
+    "name": "Likes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "post": {
+      "model": "post",
+      "via": "likes"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

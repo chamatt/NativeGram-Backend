@@ -32,6 +32,10 @@
     "comments": {
       "via": "post",
       "collection": "comment"
+    },
+    "likes": {
+      "via": "post",
+      "collection": "likes"
     }
   }
 }
