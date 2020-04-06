@@ -17,13 +17,13 @@ module.exports = {
   async create(ctx) {
     let entity;
 
-    const [likes] = await strapi.services.likes.find({
-      "user.id": ctx.state.user.id,
-    });
+    // const [likes] = await strapi.services.likes.find({
+    //   "user.id": ctx.state.user.id,
+    // });
 
-    if (likes) {
-      return ctx.unauthorized(`You have already liked this`);
-    }
+    // if (likes) {
+    //   return ctx.unauthorized(`You have already liked this`);
+    // }
 
     if (ctx.is("multipart")) {
       const { data, files } = parseMultipartData(ctx);
