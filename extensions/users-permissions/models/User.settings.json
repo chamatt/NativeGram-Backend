@@ -62,18 +62,21 @@
       "model": "profile",
       "via": "user"
     },
-    "Followers": {
-      "type": "component",
-      "repeatable": true,
-      "component": "followers.followers"
-    },
     "comments": {
-      "via": "user",
-      "collection": "comment"
+      "collection": "comment",
+      "via": "user"
     },
     "comment_replies": {
-      "via": "user",
-      "collection": "comment-reply"
+      "collection": "comment-reply",
+      "via": "user"
+    },
+    "followings": {
+      "collection": "followers",
+      "via": "follower"
+    },
+    "followers": {
+      "collection": "followers",
+      "via": "following"
     }
   }
 }

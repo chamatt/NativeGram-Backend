@@ -20,9 +20,9 @@
       "via": "comment_replies"
     },
     "user": {
+      "via": "comment_replies",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "comment_replies"
+      "model": "user"
     }
   }
 }

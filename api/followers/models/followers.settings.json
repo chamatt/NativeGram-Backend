@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "follow",
+  "info": {
+    "name": "FollowRelation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "follower": {
+      "via": "followings",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "following": {
+      "via": "followers",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
