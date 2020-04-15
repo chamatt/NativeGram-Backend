@@ -1,8 +1,0 @@
-{
-  "description": "A Strapi application",
-  "display": "standalone",
-  "lang": "en",
-  "name": "nativegram-backend",
-  "short_name": "nativegram-backend",
-  "start_url": "/?utm_source=web_app_manifest"
-}
